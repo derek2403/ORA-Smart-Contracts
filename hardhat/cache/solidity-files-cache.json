@@ -1,0 +1,800 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/AIOracle.sol": {
+      "lastModificationDate": 1728117053870,
+      "contentHash": "a04b36a5c449e9418f2abf09cf14ad1c",
+      "sourceName": "contracts/AIOracle.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IOpml.sol",
+        "./interfaces/IAIOracle.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "AIOracle"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/interfaces/IOpml.sol": {
+      "lastModificationDate": 1728117070527,
+      "contentHash": "65e52eeeef6362bfb6682204d42c04b0",
+      "sourceName": "contracts/interfaces/IOpml.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IOpml"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/interfaces/IAIOracle.sol": {
+      "lastModificationDate": 1728117070525,
+      "contentHash": "99d88147707cae39794fd4f33f1aa1ff",
+      "sourceName": "contracts/interfaces/IAIOracle.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "IAIOracle"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/upgrade/ProxyFactory.sol": {
+      "lastModificationDate": 1728117070539,
+      "contentHash": "3818f53ae55257722a9ba4a4ad2450fb",
+      "sourceName": "contracts/upgrade/ProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./transparent/TransparentUpgradeableProxy.sol",
+        "../AIOracle.sol",
+        "../interfaces/IOpml.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ProxyFactory"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/upgrade/transparent/TransparentUpgradeableProxy.sol": {
+      "lastModificationDate": 1728117070540,
+      "contentHash": "4262fa3a81109db67edd835f056e66e2",
+      "sourceName": "contracts/upgrade/transparent/TransparentUpgradeableProxy.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1967/ERC1967Utils.sol",
+        "../ERC1967/ERC1967Proxy.sol",
+        "../../interfaces/IERC1967.sol",
+        "./ProxyAdmin.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ITransparentUpgradeableProxy",
+        "TransparentUpgradeableProxy"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1728116877636,
+      "contentHash": "681c532e816169606d13a5fe8b475074",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/upgrade/ERC1967/ERC1967Utils.sol": {
+      "lastModificationDate": 1728117070538,
+      "contentHash": "9e07d463b149d96b7430cf57db7d8b84",
+      "sourceName": "contracts/upgrade/ERC1967/ERC1967Utils.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../beacon/IBeacon.sol",
+        "../utils/Address.sol",
+        "../utils/StorageSlot.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC1967Utils"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/upgrade/ERC1967/ERC1967Proxy.sol": {
+      "lastModificationDate": 1728117070538,
+      "contentHash": "8b02115b339207400b566143f61ffc05",
+      "sourceName": "contracts/upgrade/ERC1967/ERC1967Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Proxy.sol",
+        "./ERC1967Utils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC1967Proxy"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/interfaces/IERC1967.sol": {
+      "lastModificationDate": 1728117070526,
+      "contentHash": "8ceeb89906614b651216a073851348dc",
+      "sourceName": "contracts/interfaces/IERC1967.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC1967"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/upgrade/transparent/ProxyAdmin.sol": {
+      "lastModificationDate": 1728117070540,
+      "contentHash": "da72e186abdbd9a4c576b7e7c1c3ee65",
+      "sourceName": "contracts/upgrade/transparent/ProxyAdmin.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./TransparentUpgradeableProxy.sol",
+        "../utils/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ProxyAdmin"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/upgrade/beacon/IBeacon.sol": {
+      "lastModificationDate": 1728117070539,
+      "contentHash": "b2c0d1d3eb6ed6196d84c185bb8549c0",
+      "sourceName": "contracts/upgrade/beacon/IBeacon.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IBeacon"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/upgrade/utils/Address.sol": {
+      "lastModificationDate": 1728117070541,
+      "contentHash": "c176765b70d90fd7980aa010eeab490e",
+      "sourceName": "contracts/upgrade/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/upgrade/utils/StorageSlot.sol": {
+      "lastModificationDate": 1728117070541,
+      "contentHash": "7d861a71f111e5386c9185366dca94ac",
+      "sourceName": "contracts/upgrade/utils/StorageSlot.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "StorageSlot"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/upgrade/Proxy.sol": {
+      "lastModificationDate": 1728117070539,
+      "contentHash": "e78baf957d170c19fee1656c8095481f",
+      "sourceName": "contracts/upgrade/Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/upgrade/utils/Ownable.sol": {
+      "lastModificationDate": 1728117070541,
+      "contentHash": "0c9f2df58cae1f913a9eae7dafdbbcfc",
+      "sourceName": "contracts/upgrade/utils/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/upgrade/utils/Context.sol": {
+      "lastModificationDate": 1728117070541,
+      "contentHash": "a923dfa3206778bd763edbad203e6147",
+      "sourceName": "contracts/upgrade/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/mocks/MockAIOracle.sol": {
+      "lastModificationDate": 1728117070535,
+      "contentHash": "233c8323daedde5d16d1ae688362af82",
+      "sourceName": "contracts/mocks/MockAIOracle.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IOpml.sol",
+        "../interfaces/IAIOracle.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "MockAIOracle"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/SimplePrompt.sol": {
+      "lastModificationDate": 1728117060310,
+      "contentHash": "81ad832cdce0f14b99cbffc513def71d",
+      "sourceName": "contracts/SimplePrompt.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IAIOracle.sol",
+        "./AIOracleCallbackReceiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "SimplePrompt"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/AIOracleCallbackReceiver.sol": {
+      "lastModificationDate": 1728117053873,
+      "contentHash": "dc7e42d17049312f69baa73d6dd7033c",
+      "sourceName": "contracts/AIOracleCallbackReceiver.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IAIOracle.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "AIOracleCallbackReceiver"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/DummyOpml.sol": {
+      "lastModificationDate": 1728117053875,
+      "contentHash": "55e7243765b6d155b22c00a2f007a993",
+      "sourceName": "contracts/DummyOpml.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IOpml.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "DummyOpml"
+      ]
+    },
+    "/Users/derekliew/Desktop/Simple LLM/hardhat/contracts/FoodProAI.sol": {
+      "lastModificationDate": 1728137780677,
+      "contentHash": "cb6c2bed7e0097edaa06795eca904be1",
+      "sourceName": "contracts/FoodProAI.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IAIOracle.sol",
+        "./AIOracleCallbackReceiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "FoodProAI"
+      ]
+    }
+  }
+}
